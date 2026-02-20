@@ -1,0 +1,173 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f4f6f9;
+  color: #2d2d2d;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main {
+  max-width: 860px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.post-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 5px solid #0f3460;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.post-meta {
+  font-size: 0.82rem;
+  color: #888;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.post-card h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.post-card h2 a {
+  color: #0f3460;
+  text-decoration: none;
+}
+
+.post-card h2 a:hover {
+  text-decoration: underline;
+}
+
+.post-card p {
+  font-size: 0.97rem;
+  line-height: 1.75;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.read-more {
+  display: inline-block;
+  color: white;
+  background: #0f3460;
+  padding: 8px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.read-more:hover {
+  background: #e94560;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 60px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Post page styles */
+.post-page {
+  max-width: 760px;
+  margin: 50px auto;
+  padding: 0 20px 60px;
+}
+
+.post-page .back-link {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #0f3460;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.post-page .back-link:hover { text-decoration: underline; }
+
+.post-page h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #0f3460;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.post-page .meta {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.post-page .content p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 22px;
+}
+
+.post-page .content h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.3rem;
+  color: #0f3460;
+  margin: 30px 0 12px;
+}
+
+.post-page .content ul {
+  padding-left: 22px;
+  margin-bottom: 22px;
+}
+
+.post-page .content ul li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 1.9rem; }
+  .post-card h2 { font-size: 1.2rem; }
+  .post-page h1 { font-size: 1.5rem; }
+}
